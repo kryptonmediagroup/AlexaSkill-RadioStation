@@ -1,0 +1,48 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "de-DE": {
+          "summary": "Lorem ipsum dolor sit amet.",
+          "examplePhrases": [
+            "Alexa, öffne [invocation name]",
+            "Alexa, starte [invocation name]"
+          ],
+          "keywords": [],
+          "name": "Lorem ipsum",
+          "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+          "smallIconUri": "file://assets/images/de-DE_smallIconUri.png",
+          "largeIconUri": "file://assets/images/de-DE_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "sourceLocaleForLanguages": [],
+        "isActive": false
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "",
+      "category": "STREAMING_SERVICE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "interfaces": [
+          {
+            "type": "AUDIO_PLAYER"
+          }
+        ]
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "de-DE": {}
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}

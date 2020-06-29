@@ -1,0 +1,13 @@
+{
+    "name": "radio-station-skill",
+    "version": "1.0.0",
+    "description": "Radio station (Alexa skill)",
+    "main": "index.js",
+    "author": "Peter R. Stuhlmann",
+    "license": "MIT",
+    "dependencies": {
+        "ask-sdk-core": "^2.6.0",
+        "ask-sdk-model": "^1.18.0",
+        "aws-sdk": "^2.326.0"
+    }
+}

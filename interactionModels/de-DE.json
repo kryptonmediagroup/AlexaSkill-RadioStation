@@ -36,6 +36,15 @@
           "samples": [
             "Hilfe"
           ]
+        },
+        {
+          "name": "DeveloperIntent",
+          "slots": [],
+          "samples": [
+            "wer den Skill entwickelt hat",
+            "wer den Skill programmiert hat",
+            "wer den Skill geschrieben hat"
+          ]
         }
       ],
       "types": []

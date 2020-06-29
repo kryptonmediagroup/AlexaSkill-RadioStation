@@ -38,6 +38,18 @@ const HelpIntentHandler = {
   },
 };
 
+const DeveloperIntentHandler = {
+  canHandle(handlerInput) {
+    return handlerInput.requestEnvelope.request.type === 'IntentRequest'
+      && handlerInput.requestEnvelope.request.intent.name === 'DeveloperIntent';
+  },
+  handle(handlerInput) {
+    return handlerInput.responseBuilder
+      .speak(`Dieser Skill wurde von Peter Stuhlmann entwickelt.`)
+      .getResponse();
+  },
+};
+
 const CancelAndStopIntentHandler = {
   canHandle(handlerInput) {
     return handlerInput.requestEnvelope.request.type === 'IntentRequest'
@@ -127,12 +139,13 @@ const skillBuilder = Alexa.SkillBuilders.custom();
 
 exports.handler = skillBuilder
   .addRequestHandlers(
-    PlayStreamIntentHandler,
-    PlaybackStartedIntentHandler,
     CancelAndStopIntentHandler,
-    PlaybackStoppedIntentHandler,
-    HelpIntentHandler,
+    DeveloperIntentHandler,
     ExceptionEncounteredRequestHandler,
+    HelpIntentHandler,
+    PlaybackStartedIntentHandler,
+    PlaybackStoppedIntentHandler,
+    PlayStreamIntentHandler,
     SessionEndedRequestHandler
   )
   .addErrorHandlers(ErrorHandler)

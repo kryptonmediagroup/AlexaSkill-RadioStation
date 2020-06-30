@@ -18,7 +18,7 @@ const PlayStreamIntentHandler = {
   },
   handle(handlerInput) {
     handlerInput.responseBuilder
-      .speak(`Du hörst jetzt ${stream.metadata.title}.`)
+      .speak(handlerInput.requestEnvelope.request.locale === 'de-DE' ? `${deData.PLAY_STREAM_MESSAGE}.` : `${enData.PLAY_STREAM_MESSAGE}.`)
       .addAudioPlayerPlayDirective('REPLACE_ALL', stream.url, stream.token, 0, null, stream.metadata);
 
     return handlerInput.responseBuilder
@@ -33,7 +33,7 @@ const HelpIntentHandler = {
   },
   handle(handlerInput) {
     return handlerInput.responseBuilder
-      .speak(`Um weiter zu hören, sage: 'Fortsetzen' oder sage: 'Stopp', um ${stream.metadata.title} zu beenden.`)
+      .speak(handlerInput.requestEnvelope.request.locale === 'de-DE' ? `${deData.HELP_MESSAGE}.` : `${enData.HELP_MESSAGE}.`)
       .getResponse();
   },
 };
@@ -45,7 +45,7 @@ const DeveloperIntentHandler = {
   },
   handle(handlerInput) {
     return handlerInput.responseBuilder
-      .speak(`Dieser Skill wurde von Peter Stuhlmann entwickelt.`)
+      .speak(handlerInput.requestEnvelope.request.locale === 'de-DE' ? `${deData.DEVELOPER_MESSAGE}.` : `${enData.DEVELOPER_MESSAGE}.`)
       .getResponse();
   },
 };
@@ -150,3 +150,16 @@ exports.handler = skillBuilder
   )
   .addErrorHandlers(ErrorHandler)
   .lambda();
+
+
+// translations
+const deData = {
+  PLAY_STREAM_MESSAGE: `Du hörst jetzt Radio Nacional`,
+  HELP_MESSAGE: `Um weiter zu hören, sage: 'Fortsetzen' oder sage: 'Stopp', um ${stream.metadata.title} zu beenden.`,
+  DEVELOPER_MESSAGE: `Dieser Skill wurde von Peter Stuhlmann entwickelt`
+}
+const enData = {
+  PLAY_STREAM_MESSAGE: `You are now listening to Radio Nacional`,
+  HELP_MESSAGE: `To continue listening, say: 'Resume' or say: 'Stop' to end ${stream.metadata.title}.`,
+  DEVELOPER_MESSAGE: `This skill was developed by Peter Stuhlmann`
+}

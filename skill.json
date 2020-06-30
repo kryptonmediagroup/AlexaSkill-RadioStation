@@ -13,6 +13,18 @@
           "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
           "smallIconUri": "file://assets/images/de-DE_smallIconUri.png",
           "largeIconUri": "file://assets/images/de-DE_largeIconUri.png"
+        },
+        "en-US": {
+          "summary": "Lorem ipsum dolor sit amet.",
+          "examplePhrases": [
+            "Alexa, open [invocation name]",
+            "Alexa, start [invocation name]"
+          ],
+          "keywords": [],
+          "name": "Lorem ipsum",
+          "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
         }
       },
       "automaticDistribution": {

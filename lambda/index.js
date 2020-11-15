@@ -154,12 +154,12 @@ exports.handler = skillBuilder
 
 // translations
 const deData = {
-  PLAY_STREAM_MESSAGE: `Du hörst jetzt Radio Nacional`,
+  PLAY_STREAM_MESSAGE: `Du hörst jetzt Krypton Radio`,
   HELP_MESSAGE: `Um weiter zu hören, sage: 'Fortsetzen' oder sage: 'Stopp', um ${stream.metadata.title} zu beenden.`,
-  DEVELOPER_MESSAGE: `Dieser Skill wurde von Peter Stuhlmann entwickelt`
+  DEVELOPER_MESSAGE: `Dieser Skill wurde von Krypton Media Group entwickelt`
 }
 const enData = {
-  PLAY_STREAM_MESSAGE: `You are now listening to Radio Nacional`,
+  PLAY_STREAM_MESSAGE: `You are now listening to Krypton Radio.`,
   HELP_MESSAGE: `To continue listening, say: 'Resume' or say: 'Stop' to end ${stream.metadata.title}.`,
-  DEVELOPER_MESSAGE: `This skill was developed by Peter Stuhlmann`
+  DEVELOPER_MESSAGE: `This skill was developed by Krypton Media Group`
 }

@@ -8,3 +8,5 @@
 ## License
 
 Licensed under the [MIT](https://github.com/peter-stuhlmann/AlexaSkill-RadioStation/blob/master/LICENSE) license by [Peter R. Stuhlmann](https://peter-stuhlmann-webentwicklung.de).
+
+This version plays the Krypton Radio stream from kryptonradio.com.

@@ -1,9 +1,9 @@
 {
-    "name": "radio-station-skill",
+    "name": "Krypton Radio Player",
     "version": "1.0.0",
-    "description": "Radio station (Alexa skill)",
+    "description": "Krypton Radio Player",
     "main": "index.js",
-    "author": "Peter R. Stuhlmann",
+    "author": "Krypton Media Group",
     "license": "MIT",
     "dependencies": {
         "ask-sdk-core": "^2.6.0",

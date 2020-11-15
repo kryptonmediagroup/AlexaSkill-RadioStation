@@ -3,26 +3,26 @@
     "publishingInformation": {
       "locales": {
         "de-DE": {
-          "summary": "Lorem ipsum dolor sit amet.",
+          "summary": "Krypton Radio ist Sci-Fi für Ihr Wi-Fi.",
           "examplePhrases": [
             "Alexa, öffne [invocation name]",
             "Alexa, starte [invocation name]"
           ],
-          "keywords": [],
-          "name": "Lorem ipsum",
-          "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+          "keywords": ["Sci-Fi-Musik","Science-Fiction","music","radio"],
+          "name": "Krypton Radio",
+          "description": "Krypton Radio ist der weltweit beliebteste Radiosender für Science-Fiction-Geeks und Popkultur. Zum Spielen sagen Sie einfach \"Alexa, spielen Sie Krypton Radio\".",
           "smallIconUri": "file://assets/images/de-DE_smallIconUri.png",
           "largeIconUri": "file://assets/images/de-DE_largeIconUri.png"
         },
         "en-US": {
-          "summary": "Lorem ipsum dolor sit amet.",
+          "summary": "Krypton Radio is Sci-Fi for your Wi-Fi.",
           "examplePhrases": [
             "Alexa, open [invocation name]",
             "Alexa, start [invocation name]"
           ],
-          "keywords": [],
-          "name": "Lorem ipsum",
-          "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+          "keywords": ["scifi music","filk","science fiction music","music","radio"],
+          "name": "Krypton Radio",
+          "description": "Krypton Radio is the world's most popular sci-fi, geek and pop culture radio station. To play, say \"Alexa, play Krypton Radio\".",
           "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
           "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
         }
